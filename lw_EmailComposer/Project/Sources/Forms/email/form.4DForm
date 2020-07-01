@@ -1,0 +1,210 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 916,
+	"windowMinHeight": 736,
+	"width": 916,
+	"height": 736,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onTimer",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"to": {
+					"type": "subform",
+					"top": 5,
+					"left": 0,
+					"width": 801,
+					"height": 32,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.toSubform",
+					"detailForm": "toAddressForm",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"cc": {
+					"type": "subform",
+					"top": 39,
+					"left": 0,
+					"width": 801,
+					"height": 32,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.ccSubform",
+					"detailForm": "ccAddressForm",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"subject": {
+					"type": "subform",
+					"top": 73,
+					"left": 0,
+					"width": 801,
+					"height": 32,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.subject",
+					"dataSourceTypeHint": "text",
+					"detailForm": "subjectForm",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/subject.4dm"
+				},
+				"attachments": {
+					"type": "subform",
+					"top": 107,
+					"left": 0,
+					"width": 916,
+					"height": 32,
+					"sizingX": "grow",
+					"dataSourceTypeHint": "text",
+					"detailForm": "attachmentsForm",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/attachments.4dm"
+				},
+				"editor": {
+					"type": "subform",
+					"top": 143,
+					"left": 0,
+					"width": 916,
+					"height": 593,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "undefined",
+					"detailForm": "editor",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"sendButton": {
+					"type": "button",
+					"top": 5,
+					"left": 800,
+					"width": 111,
+					"height": 100,
+					"sizingX": "move",
+					"focusable": false,
+					"style": "bevel",
+					"method": "ObjectMethods/sendButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 26,
+					"left": 839,
+					"width": 51,
+					"height": 34,
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"Line2": {
+					"type": "line",
+					"top": 34,
+					"left": 845,
+					"width": 20,
+					"height": 11,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"startPoint": "topLeft"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 34,
+					"left": 864,
+					"width": 20,
+					"height": 11,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"startPoint": "bottomLeft"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 35,
+					"left": 816,
+					"width": 19,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 42,
+					"left": 820,
+					"width": 15,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 49,
+					"left": 825,
+					"width": 10,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 70,
+					"left": 811,
+					"width": 76,
+					"height": 22,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"class": "font18",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "SEND",
+					"fontFamily": "Arial",
+					"fontSize": 16
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

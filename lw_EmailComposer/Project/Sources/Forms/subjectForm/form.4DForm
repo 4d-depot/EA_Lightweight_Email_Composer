@@ -1,0 +1,60 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 74,
+					"width": 722,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 8,
+					"left": 11,
+					"width": 60,
+					"height": 20,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Subject:"
+				},
+				"subjectField": {
+					"type": "input",
+					"top": 9,
+					"left": 79,
+					"width": 711,
+					"height": 16,
+					"sizingX": "grow",
+					"class": "default",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/subjectField.4dm",
+					"events": [
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	]
+}

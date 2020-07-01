@@ -1,0 +1,79 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 801,
+	"height": 500,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"toRect": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 74,
+					"width": 722,
+					"height": 30,
+					"stroke": "#C0C0C0"
+				},
+				"Text": {
+					"type": "text",
+					"top": 9,
+					"left": 0,
+					"width": 71,
+					"height": 20,
+					"class": "default",
+					"textAlign": "right",
+					"text": "To:"
+				},
+				"toField": {
+					"type": "input",
+					"top": 9,
+					"left": 79,
+					"width": 711,
+					"height": 16,
+					"dataSource": "Form:C1466.to",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/toField.4dm",
+					"events": [
+						"onLoad",
+						"onBeforeKeystroke",
+						"onDataChange"
+					]
+				},
+				"addrToButton0": {
+					"type": "checkbox",
+					"top": 6,
+					"left": 10,
+					"width": 16,
+					"height": 21,
+					"visibility": "hidden",
+					"class": "addrButton",
+					"focusable": false,
+					"textPlacement": "center",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/addrToButton0.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

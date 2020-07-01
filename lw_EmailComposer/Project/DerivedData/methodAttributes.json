@@ -1,0 +1,123 @@
+﻿{
+	"methods": {
+		"lw_MailEditor": {
+			"timeStamp": "2020-05-18T21:00:53.540Z",
+			"attributes": {
+				"shared": true
+			}
+		},
+		"setInputFocus": {
+			"timeStamp": "2020-04-24T23:31:21.900Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"adjustUI": {
+			"timeStamp": "2020-04-24T23:31:21.900Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"saveSMTPSetting": {
+			"timeStamp": "2020-05-16T21:53:42.899Z",
+			"attributes": {
+				"invisible": true,
+				"executedOnServer": true
+			}
+		},
+		"Compiler_Arrays": {
+			"timeStamp": "2020-06-15T22:46:20.409Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"resizeToForm": {
+			"timeStamp": "2020-04-24T23:31:21.906Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"_openSplashScreen": {
+			"timeStamp": "2020-05-15T18:50:55.171Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"wp_SendMail": {
+			"timeStamp": "2020-06-16T20:13:33.330Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"lw_SmtpSettings": {
+			"timeStamp": "2020-05-20T16:00:01.031Z",
+			"attributes": {
+				"shared": true
+			}
+		},
+		"setObjectBestSize": {
+			"timeStamp": "2020-04-24T23:31:21.910Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"_Example": {
+			"timeStamp": "2020-04-28T23:18:22.614Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2020-06-15T22:46:20.408Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2020-06-16T20:14:41.625Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"onSmtpErr": {
+			"timeStamp": "2020-05-15T18:07:26.124Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"setFontSize": {
+			"timeStamp": "2020-04-24T23:31:21.912Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"resizeCcForm": {
+			"timeStamp": "2020-04-24T23:31:21.913Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"setInitialToEmail": {
+			"timeStamp": "2020-04-24T23:31:21.914Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true
+			}
+		},
+		"loadSMTPSetting": {
+			"timeStamp": "2020-05-19T22:33:52.589Z",
+			"attributes": {
+				"invisible": true,
+				"executedOnServer": true
+			}
+		}
+	}
+}

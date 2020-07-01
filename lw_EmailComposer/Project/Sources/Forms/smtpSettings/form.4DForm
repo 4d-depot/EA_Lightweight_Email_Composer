@@ -1,0 +1,348 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "SMTP Settings",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Oval": {
+					"type": "oval",
+					"top": 24,
+					"left": 19,
+					"width": 80,
+					"height": 80,
+					"stroke": "#696969",
+					"strokeWidth": 3
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 47,
+					"left": 34,
+					"width": 51,
+					"height": 34,
+					"sizingX": "move",
+					"fill": "transparent",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"borderRadius": 5
+				},
+				"Line2": {
+					"type": "line",
+					"top": 55,
+					"left": 40,
+					"width": 20,
+					"height": 11,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"startPoint": "topLeft"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 55,
+					"left": 59,
+					"width": 20,
+					"height": 11,
+					"sizingX": "move",
+					"stroke": "#696969",
+					"strokeWidth": 3,
+					"startPoint": "bottomLeft"
+				},
+				"r4": {
+					"type": "rectangle",
+					"top": 124,
+					"left": 194,
+					"width": 282,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"r5": {
+					"type": "rectangle",
+					"top": 159,
+					"left": 194,
+					"width": 282,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"r1": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 194,
+					"width": 282,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#c0c0c0"
+				},
+				"r2": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 194,
+					"width": 282,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"r3": {
+					"type": "rectangle",
+					"top": 90,
+					"left": 194,
+					"width": 282,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"Text": {
+					"type": "text",
+					"top": 28,
+					"left": 111,
+					"width": 80,
+					"height": 21,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Server:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 63,
+					"left": 111,
+					"width": 80,
+					"height": 21,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Port:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 97,
+					"left": 111,
+					"width": 80,
+					"height": 21,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Username: "
+				},
+				"host": {
+					"type": "input",
+					"top": 28,
+					"left": 199,
+					"width": 271,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.host",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "smtp.domain.com",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/host.4dm"
+				},
+				"port": {
+					"type": "input",
+					"top": 63,
+					"left": 199,
+					"width": 271,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.port",
+					"dataSourceTypeHint": "number",
+					"class": "default",
+					"textAlign": "left",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"placeholder": "e.g . 25, 465 or 587 ",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/port.4dm"
+				},
+				"user": {
+					"type": "input",
+					"top": 98,
+					"left": 199,
+					"width": 271,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.user",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "<username>",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/user.4dm"
+				},
+				"password": {
+					"type": "input",
+					"top": 132,
+					"left": 199,
+					"width": 211,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.password",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "<password>",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/password.4dm"
+				},
+				"email": {
+					"type": "input",
+					"top": 167,
+					"left": 199,
+					"width": 271,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.from",
+					"class": "default",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": "john.smith@domain.com",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onGettingFocus"
+					],
+					"method": "ObjectMethods/email.4dm"
+				},
+				"Button": {
+					"type": "button",
+					"top": 248,
+					"left": 261,
+					"width": 100,
+					"height": 30,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 248,
+					"left": 375,
+					"width": 100,
+					"height": 30,
+					"action": "cancel",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 132,
+					"left": 111,
+					"width": 80,
+					"height": 21,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Password:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 166,
+					"left": 71,
+					"width": 120,
+					"height": 21,
+					"class": "default",
+					"textAlign": "right",
+					"text": "Sender Email:"
+				},
+				"visible": {
+					"type": "input",
+					"top": 133,
+					"left": 418,
+					"width": 51,
+					"height": 15,
+					"sizingX": "grow",
+					"dataSource": "Form:C1466.visible",
+					"stroke": "#6495ED",
+					"class": "font12",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"placeholder": "<password>",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/visible.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Log SMTP Communication",
+					"top": 202,
+					"left": 193,
+					"width": 219,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.log",
+					"dataSourceTypeHint": "boolean"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group1": [
+				"Oval",
+				"Round Rectangle",
+				"Line2",
+				"Line1"
+			]
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"menuBar": "Menu Bar #1"
+}

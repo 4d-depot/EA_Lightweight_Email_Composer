@@ -1,0 +1,36 @@
+﻿{
+	"forms": {
+		"attachmentsForm": {
+			"timeStamp": "2020-03-17T18:19:29.232Z",
+			"destination": "detailScreen"
+		},
+		"splashScreen": {
+			"timeStamp": "2020-05-20T16:13:58.348Z",
+			"destination": "detailScreen"
+		},
+		"ccAddressForm": {
+			"timeStamp": "2020-03-17T18:19:29.228Z",
+			"destination": "detailScreen"
+		},
+		"toAddressForm": {
+			"timeStamp": "2020-03-17T18:19:29.222Z",
+			"destination": "detailScreen"
+		},
+		"subjectForm": {
+			"timeStamp": "2020-03-17T18:19:29.229Z",
+			"destination": "detailScreen"
+		},
+		"email": {
+			"timeStamp": "2020-06-15T22:55:29.954Z",
+			"destination": "detailScreen"
+		},
+		"editor": {
+			"timeStamp": "2020-05-15T17:05:56.866Z",
+			"destination": "detailScreen"
+		},
+		"smtpSettings": {
+			"timeStamp": "2020-05-19T22:33:29.880Z",
+			"destination": "detailScreen"
+		}
+	}
+}

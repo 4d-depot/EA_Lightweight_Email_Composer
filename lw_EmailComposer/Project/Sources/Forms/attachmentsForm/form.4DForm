@@ -1,0 +1,85 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "611pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 74,
+					"width": 837,
+					"height": 30,
+					"sizingX": "grow",
+					"stroke": "#C0C0C0"
+				},
+				"Picture3": {
+					"type": "picture",
+					"top": 7,
+					"left": 51,
+					"width": 20,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture3.png"
+				},
+				"attachments": {
+					"type": "dropdown",
+					"top": 6,
+					"left": 78,
+					"width": 719,
+					"height": 24,
+					"sizingX": "grow",
+					"dataSource": "attachedPath_at",
+					"focusable": false,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"addAttachment": {
+					"type": "button",
+					"top": 6,
+					"left": 802,
+					"width": 50,
+					"height": 21,
+					"sizingX": "move",
+					"text": "add",
+					"class": "font12",
+					"focusable": false,
+					"method": "ObjectMethods/addAttachment.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"delAttachment": {
+					"type": "button",
+					"top": 6,
+					"left": 856,
+					"width": 50,
+					"height": 21,
+					"sizingX": "move",
+					"text": "del",
+					"class": "font12",
+					"focusable": false,
+					"method": "ObjectMethods/delAttachment.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

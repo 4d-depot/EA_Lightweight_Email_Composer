@@ -1,0 +1,61 @@
+﻿{
+	"Compiler": {
+		"methods": [
+			"Compiler_Arrays",
+			"Compiler_Methods",
+			"Compiler_Variables"
+		]
+	},
+	"Email Composer": {
+		"methods": [
+			"lw_MailEditor",
+			"wp_SendMail"
+		]
+	},
+	"Form UI": {
+		"forms": [
+			"attachmentsForm",
+			"ccAddressForm",
+			"editor",
+			"email",
+			"smtpSettings",
+			"subjectForm",
+			"toAddressForm"
+		]
+	},
+	"Methods": {
+		"groups": [
+			"Email Composer",
+			"SMTP Settings",
+			"UI Controls"
+		]
+	},
+	"SMTP Settings": {
+		"methods": [
+			"loadSMTPSetting",
+			"lw_SmtpSettings",
+			"onSmtpErr",
+			"saveSMTPSetting"
+		]
+	},
+	"Splashscreen": {
+		"methods": [
+			"_openSplashScreen"
+		],
+		"forms": [
+			"splashScreen"
+		]
+	},
+	"UI Controls": {
+		"methods": [
+			"adjustUI",
+			"resizeCcForm",
+			"resizeToForm",
+			"setFontSize",
+			"setInitialToEmail",
+			"setInputFocus",
+			"setObjectBestSize"
+		]
+	},
+	"trash": {}
+}
