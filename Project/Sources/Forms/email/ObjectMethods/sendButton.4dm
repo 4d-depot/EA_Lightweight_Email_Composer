@@ -1,24 +1,31 @@
-C_OBJECT:C1216($wpObjParams)
+var $wpObjParams : Object
+var $attachments_c : Collection
+var $path : Text
 
-$wpObjParams:=New object:C1471
-$wpObjParams.host:=Form:C1466.host
-$wpObjParams.port:=Form:C1466.port
-$wpObjParams.from:=Form:C1466.from
-$wpObjParams.user:=Form:C1466.user
-$wpObjParams.password:=Form:C1466.password
-$wpObjParams.log:=Form:C1466.log
-$wpObjParams.to:=toAddress_t
-$wpObjParams.cc:=ccAddress_t
-$wpObjParams.subject:=Form:C1466.subject
+$wpObjParams:=New object
+$wpObjParams.host:=Form.host
+$wpObjParams.port:=Form.port
+$wpObjParams.from:=Form.from
+$wpObjParams.user:=Form.user
+$wpObjParams.password:=Form.password
+$wpObjParams.log:=Form.log
+$wpObjParams.to:=Storage.emailComposer.toAddressText
+$wpObjParams.cc:=Storage.emailComposer.ccAddressText
+$wpObjParams.subject:=Form.subject
 
-If (importance_t#"")
-	$wpObjParams.importance:=importance_t
-End if 
+If (Storage.emailComposer.importance#"")
+	$wpObjParams.importance:=Storage.emailComposer.importance
+End if
 
-OB SET ARRAY:C1227($wpObjParams;"attachments";attachedPath_at)
+// Convert shared collection to regular collection for email sending
+$attachments_c:=New collection
+For each ($path; Storage.emailComposer.attachments)
+	$attachments_c.push($path)
+End for each
+$wpObjParams.attachments:=$attachments_c
 
-If (wp_SendMail (WriteProArea;$wpObjParams)=1)
-	CANCEL:C270
-Else 
-	
+If (wp_SendMail(WriteProArea; $wpObjParams)=1)
+	CANCEL
+Else
+
 End if 

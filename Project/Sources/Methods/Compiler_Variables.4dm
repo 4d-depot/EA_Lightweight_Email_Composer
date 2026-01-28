@@ -1,9 +1,9 @@
 //%attributes = {"invisible":true}
-C_TEXT:C284(ccAddress_t)
-C_TEXT:C284(clickedCcButton_t)
-C_TEXT:C284(clickedToButton_t)
-C_LONGINT:C283(dupCcCount_l)
-C_LONGINT:C283(dupToCount_l)
-C_TEXT:C284(importance_t)
-C_TEXT:C284(toAddress_t)
-C_OBJECT:C1216(WriteProArea)
+//Updated By Soukaina BACHIKH
+
+var WriteProArea : Object
+ARRAY TEXT:C222(attachments_at; 0)
+ARRAY TEXT:C222(font_at; 0)
+
+// Note: All other data (recipients, importance, etc.)
+// now uses Storage.emailComposer instead of process variables

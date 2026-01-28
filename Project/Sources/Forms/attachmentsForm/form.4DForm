@@ -43,7 +43,7 @@
 					"width": 719,
 					"height": 24,
 					"sizingX": "grow",
-					"dataSource": "attachedPath_at",
+					"dataSource": "attachments_at",
 					"focusable": false,
 					"events": [
 						"onDataChange"

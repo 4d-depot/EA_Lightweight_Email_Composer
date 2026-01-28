@@ -1,24 +1,21 @@
-C_BOOLEAN:C305($update_b)
-C_LONGINT:C283($bestW;$bestH;$l;$t;$r;$b;$delIndex_l;$level;dupToCount_l)
-C_TEXT:C284($address_t)
+var $update_b : Boolean
+var $bestW; $bestH; $l; $t; $r; $b; $delIndex_l; $level : Integer
+var $address_t : Text
 
 Case of 
-	: (Form event code:C388=On Load:K2:1)
-		C_TEXT:C284(toAddress_t)
-		ARRAY TEXT:C222(toAddress_at;0)
-		dupToCount_l:=0
-		toAddress_t:=""
 		
 	: (Form event code:C388=On Before Keystroke:K2:6)
 		If (Character code:C91(Keystroke:C390)=Backspace key:K12:29)
 			If (Get edited text:C655="")
-				If (Size of array:C274(toAddress_at)>0)
-					If (clickedToButton_t#"")
-						$delIndex_l:=Num:C11(clickedToButton_t)
-					Else 
-						$delIndex_l:=Size of array:C274(toAddress_at)
-					End if 
-					DELETE FROM ARRAY:C228(toAddress_at;$delIndex_l;1)
+				If (Storage:C1525.emailComposer.to.length>0)
+					Use (Storage:C1525.emailComposer)
+						If (Storage:C1525.emailComposer.clickedToButton#"")
+							$delIndex_l:=Num:C11(Storage:C1525.emailComposer.clickedToButton)
+						Else 
+							$delIndex_l:=Storage:C1525.emailComposer.to.length
+						End if 
+						Storage:C1525.emailComposer.to.remove($delIndex_l-1)
+					End use 
 					$update_b:=True:C214
 				End if 
 			End if 
@@ -29,7 +26,9 @@ Case of
 		
 		$address_t:=Get edited text:C655
 		If ($address_t#"")
-			APPEND TO ARRAY:C911(toAddress_at;$address_t)
+			Use (Storage:C1525.emailComposer)
+				Storage:C1525.emailComposer.to.push($address_t)
+			End use 
 		End if 
 		$update_b:=True:C214
 		
@@ -37,8 +36,10 @@ End case
 
 If ($update_b)
 	
-	resizeToForm 
+	resizeToForm
 	
 End if 
 
-clickedToButton_t:=""
+Use (Storage:C1525.emailComposer)
+	Storage:C1525.emailComposer.clickedToButton:=""
+End use 

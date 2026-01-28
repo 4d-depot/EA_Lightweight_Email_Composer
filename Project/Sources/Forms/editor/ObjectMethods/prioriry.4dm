@@ -1,27 +1,33 @@
-C_LONGINT:C283($selected_l)
-C_TEXT:C284($choice_t)
+var $selected_l : Integer
+var $choice_t : Text
 $choice_t:="High priority;No prioriry;Low priority"
-$selected_l:=Pop up menu:C542($choice_t)
-Case of 
+$selected_l:=Pop up menu($choice_t)
+Case of
 	: ($selected_l=1)
-		OBJECT SET TITLE:C194(*;"priorityLabel";"High priority")
-		OBJECT SET VISIBLE:C603(*;"noPriority";False:C215)
-		OBJECT SET VISIBLE:C603(*;"highPArr@";True:C214)
-		OBJECT SET VISIBLE:C603(*;"lowPArr@";False:C215)
-		importance_t:="High"
-		
+		OBJECT SET TITLE(*; "priorityLabel"; "High priority")
+		OBJECT SET VISIBLE(*; "noPriority"; False)
+		OBJECT SET VISIBLE(*; "highPArr@"; True)
+		OBJECT SET VISIBLE(*; "lowPArr@"; False)
+		Use (Storage.emailComposer)
+			Storage.emailComposer.importance:="High"
+		End use
+
 	: ($selected_l=2)
-		OBJECT SET TITLE:C194(*;"priorityLabel";"No priority")
-		OBJECT SET VISIBLE:C603(*;"noPriority";True:C214)
-		OBJECT SET VISIBLE:C603(*;"highPArr@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"lowPArr@";False:C215)
-		importance_t:=""
-		
+		OBJECT SET TITLE(*; "priorityLabel"; "No priority")
+		OBJECT SET VISIBLE(*; "noPriority"; True)
+		OBJECT SET VISIBLE(*; "highPArr@"; False)
+		OBJECT SET VISIBLE(*; "lowPArr@"; False)
+		Use (Storage.emailComposer)
+			Storage.emailComposer.importance:=""
+		End use
+
 	: ($selected_l=3)
-		OBJECT SET TITLE:C194(*;"priorityLabel";"Low priority")
-		OBJECT SET VISIBLE:C603(*;"noPriority";False:C215)
-		OBJECT SET VISIBLE:C603(*;"highPArr@";False:C215)
-		OBJECT SET VISIBLE:C603(*;"lowPArr@";True:C214)
-		importance_t:="Low"
-		
+		OBJECT SET TITLE(*; "priorityLabel"; "Low priority")
+		OBJECT SET VISIBLE(*; "noPriority"; False)
+		OBJECT SET VISIBLE(*; "highPArr@"; False)
+		OBJECT SET VISIBLE(*; "lowPArr@"; True)
+		Use (Storage.emailComposer)
+			Storage.emailComposer.importance:="Low"
+		End use
+
 End case 

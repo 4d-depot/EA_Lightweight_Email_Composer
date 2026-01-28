@@ -1,8 +1,8 @@
-C_LONGINT:C283($sel)
-C_POINTER:C301($ptr)
-$ptr:=OBJECT Get pointer:C1124(Object named:K67:5;"fontSize")
-$sel:=Pop up menu:C542("10;12;14;16;18;20;22;24;28;32")
-Case of 
+var $sel : Integer
+var $ptr : Pointer
+$ptr:=OBJECT Get pointer(Object named; "fontSize")
+$sel:=Pop up menu("10;12;14;16;18;20;22;24;28;32")
+Case of
 	: ($sel=1)
 		$ptr->:=10
 	: ($sel=2)
@@ -23,6 +23,6 @@ Case of
 		$ptr->:=28
 	: ($sel=10)
 		$ptr->:=32
-End case 
+End case
 
-setFontSize ($ptr->)
+setFontSize($ptr->)

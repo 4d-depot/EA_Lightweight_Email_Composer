@@ -1,17 +1,20 @@
-C_LONGINT:C283(dupToCount_l;$i;$lastValue_l)
-C_TEXT:C284(clickedToButton_t)
+var $i; $lastValue_l : Integer
 
-$lastValue_l:=OBJECT Get pointer:C1124(Object named:K67:5;OBJECT Get name:C1087(Object current:K67:2))->
+$lastValue_l:=OBJECT Get pointer(Object named; OBJECT Get name(Object current))->
 
-For ($i;1;dupToCount_l)
-	OBJECT Get pointer:C1124(Object named:K67:5;"addrToButton"+String:C10($i))->:=0
-End for 
+For ($i; 1; Storage.emailComposer.dupToCount)
+	OBJECT Get pointer(Object named; "addrToButton"+String($i))->:=0
+End for
 
 If ($lastValue_l=1)
-	clickedToButton_t:=OBJECT Get name:C1087(Object current:K67:2)
-	OBJECT Get pointer:C1124(Object named:K67:5;clickedToButton_t)->:=1
-Else 
-	clickedToButton_t:=""
-End if 
+	Use (Storage.emailComposer)
+		Storage.emailComposer.clickedToButton:=OBJECT Get name(Object current)
+	End use
+	OBJECT Get pointer(Object named; Storage.emailComposer.clickedToButton)->:=1
+Else
+	Use (Storage.emailComposer)
+		Storage.emailComposer.clickedToButton:=""
+	End use
+End if
 
-GOTO OBJECT:C206(*;"toField")
+GOTO OBJECT(*; "toField")

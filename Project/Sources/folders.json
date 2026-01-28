@@ -1,8 +1,6 @@
-﻿{
+{
 	"Compiler": {
 		"methods": [
-			"Compiler_Arrays",
-			"Compiler_Methods",
 			"Compiler_Variables"
 		]
 	},

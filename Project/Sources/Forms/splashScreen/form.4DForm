@@ -1,4 +1,4 @@
-﻿{
+{
 	"$4d": {
 		"version": "1",
 		"kind": "form"
@@ -41,7 +41,7 @@
 					"top": 0,
 					"left": 0,
 					"width": 178,
-					"height": 363,
+					"height": 287,
 					"stroke": "transparent"
 				},
 				"Oval": {
@@ -67,7 +67,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "This application provides a lightweight version of the email composer. It can be used in any project that offers a rich text email editor to the user. It is also component-ready which can be installed in any 4D hosted database to offer email functionality.\r\rThis application utilizes 4D Write Pro and the SMTP Transport feature in version 18.",
+					"text": "This application provides a lightweight version of the email composer. It can be used in any project that offers a rich text email editor to the user. It is also component-ready which can be installed in any 4D hosted database to offer email functionality.\r\r",
 					"top": 70,
 					"left": 200,
 					"width": 450,
@@ -145,18 +145,18 @@
 				},
 				"Rectangle1": {
 					"type": "rectangle",
-					"top": 319,
+					"top": 249,
 					"left": 530,
 					"width": 121,
 					"height": 30,
-					"fill": "#FB854C",
+					"fill": "#1e90ff",
 					"stroke": "transparent",
 					"borderRadius": 5
 				},
 				"Button": {
 					"type": "button",
 					"text": "Start",
-					"top": 321,
+					"top": 251,
 					"left": 530,
 					"width": 120,
 					"height": 26,
@@ -189,5 +189,6 @@
 				"Line5"
 			]
 		}
-	}
+	},
+	"geometryStamp": 23
 }

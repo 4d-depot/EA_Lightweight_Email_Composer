@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"rightMargin": 0,
 	"bottomMargin": 5,
@@ -781,10 +781,10 @@
 						"onSelectionChange",
 						"onMouseLeave"
 					],
+					"listboxType": "array",
 					"columns": [
 						{
 							"name": "Column1",
-							"dataSource": "font_at",
 							"width": 184,
 							"minWidth": 10,
 							"maxWidth": 32000,
@@ -809,7 +809,8 @@
 								"verticalAlign": "middle",
 								"fontFamily": "Helvetica Neue",
 								"fontSize": 14
-							}
+							},
+							"dataSource": "font_at"
 						}
 					]
 				},
@@ -1017,6 +1018,16 @@
 	],
 	"editor": {
 		"groups": {
+			"Group": [
+				"lowPArrL",
+				"lowPArrR",
+				"lowPArrM"
+			],
+			"Group1": [
+				"highPArrL",
+				"highPArrR",
+				"highPArrM"
+			],
 			"Group4": [
 				"alignL",
 				"alignC",
@@ -1036,17 +1047,12 @@
 				"Line34",
 				"Line35",
 				"Line36"
-			],
-			"Group1": [
-				"highPArrL",
-				"highPArrR",
-				"highPArrM"
-			],
-			"Group": [
-				"lowPArrL",
-				"lowPArrR",
-				"lowPArrM"
 			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
 		}
 	},
 	"$4d": {

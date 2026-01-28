@@ -1,0 +1,29 @@
+{
+	"C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Project\\lw_EmailComposer.4DProject": [
+		{
+			"backupPath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\data[0001].4BK",
+			"structurePath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Project\\lw_EmailComposer.4DProject",
+			"dataPath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Data\\data.4DD",
+			"logPath": "",
+			"startingDate": "2026-01-28T14:00:22.747Z",
+			"endingDate": "2026-01-28T14:00:22.747Z",
+			"scheduledDate": "2026-01-28T14:00:22.747Z",
+			"backupNumber": 1,
+			"duration": 53,
+			"attachments": [
+				{
+					"attachmentPath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Data\\data.4DSyncHeader",
+					"found": false
+				},
+				{
+					"attachmentPath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Data\\data.4DSyncData",
+					"found": false
+				},
+				{
+					"attachmentPath": "C:\\Users\\Admin\\Desktop\\EA_Lightweight_Email_Composer\\Data\\data.4DIndx",
+					"found": false
+				}
+			]
+		}
+	]
+}

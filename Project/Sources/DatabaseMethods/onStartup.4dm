@@ -1,2 +1,3 @@
-_openSplashScreen 
-lw_MailEditor 
+initEmailStorage
+_openSplashScreen
+lw_MailEditor
